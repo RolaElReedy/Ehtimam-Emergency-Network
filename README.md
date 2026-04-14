@@ -21,3 +21,18 @@ Client-Server asynchronous TCP system with structured JSON protocol.
 - Christine Selwanes
 - Omar Abdelaaty
 
+## Features Implemented (Milestone 2)
+- Client-server communication (Boost.Asio)
+- Emergency alert system
+- Real-time broadcasting
+- Basic circle management (add/remove/list users)
+- Status updates (text messages)
+
+## How to Run
+1. Run server:
+   ./server_app
+2. Run two clients:
+   ./client_app
+
+## Demo
+- Type: add <name>, list, alert
