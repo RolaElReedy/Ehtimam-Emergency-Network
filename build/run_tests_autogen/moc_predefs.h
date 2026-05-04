@@ -1,5 +1,4 @@
 #define ARCHITECTURE_ID "arm64"
-#define GTEST_LINKED_AS_SHARED_LIBRARY 1
 #define SIZEOF_DPTR (sizeof(void*))
 #define TARGET_IPHONE_SIMULATOR 0
 #define TARGET_OS_ARROW 1

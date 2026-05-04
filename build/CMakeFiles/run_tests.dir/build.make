@@ -118,8 +118,9 @@ run_tests_EXTERNAL_OBJECTS =
 run_tests: CMakeFiles/run_tests.dir/run_tests_autogen/mocs_compilation.cpp.o
 run_tests: CMakeFiles/run_tests.dir/tests/test_main.cpp.o
 run_tests: CMakeFiles/run_tests.dir/build.make
-run_tests: /opt/anaconda3/lib/libgmock.1.11.0.dylib
-run_tests: /opt/anaconda3/lib/libgtest.1.11.0.dylib
+run_tests: /opt/homebrew/lib/libgtest.a
+run_tests: /opt/homebrew/lib/libgmock.a
+run_tests: /opt/homebrew/lib/libgtest_main.a
 run_tests: CMakeFiles/run_tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable run_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/run_tests.dir/link.txt --verbose=$(VERBOSE)

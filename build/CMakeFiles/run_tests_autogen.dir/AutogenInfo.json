@@ -579,7 +579,7 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/Users/rolaelreedy/Ehtimam-Emergency-Network/build/run_tests_autogen/include",
 	"MOC_COMPILATION_FILE" : "/Users/rolaelreedy/Ehtimam-Emergency-Network/build/run_tests_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "GTEST_LINKED_AS_SHARED_LIBRARY=1" ],
+	"MOC_DEFINITIONS" : [],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -589,6 +589,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/opt/homebrew/include",
 		"/opt/anaconda3/include",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
 		"/Library/Developer/CommandLineTools/usr/lib/clang/17/include",
