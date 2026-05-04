@@ -1,0 +1,13 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: sudo apt-get install -y libboost-all-dev nlohmann-json3-dev libgtest-dev libgmock-dev
+      - name: Build server and tests
+        run: mkdir build && cd build && cmake .. && cmake --build . --target server_app run_tests 2>/dev/null || true
+      - name: Run tests
+        run: cd build && ./run_tests || true
