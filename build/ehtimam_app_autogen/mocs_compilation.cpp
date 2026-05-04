@@ -3,3 +3,4 @@
 #include "MXUWEOXILK/moc_CircleWindow.cpp"
 #include "MXUWEOXILK/moc_LoginWindow.cpp"
 #include "MXUWEOXILK/moc_MainWindow.cpp"
+#include "MXUWEOXILK/moc_ResourcesWindow.cpp"

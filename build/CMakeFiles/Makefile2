@@ -64,12 +64,14 @@ CMAKE_BINARY_DIR = /Users/rolaelreedy/Ehtimam-Emergency-Network/build
 
 # The main recursive "all" target.
 all: CMakeFiles/server_app.dir/all
+all: CMakeFiles/logic_lib.dir/all
 all: CMakeFiles/ehtimam_app.dir/all
 all: CMakeFiles/run_tests.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/server_app.dir/codegen
+codegen: CMakeFiles/logic_lib.dir/codegen
 codegen: CMakeFiles/ehtimam_app.dir/codegen
 codegen: CMakeFiles/run_tests.dir/codegen
 .PHONY : codegen
@@ -80,10 +82,13 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/server_app.dir/clean
+clean: CMakeFiles/logic_lib.dir/clean
 clean: CMakeFiles/ehtimam_app.dir/clean
 clean: CMakeFiles/run_tests.dir/clean
 clean: CMakeFiles/server_app_autogen_timestamp_deps.dir/clean
 clean: CMakeFiles/server_app_autogen.dir/clean
+clean: CMakeFiles/logic_lib_autogen_timestamp_deps.dir/clean
+clean: CMakeFiles/logic_lib_autogen.dir/clean
 clean: CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir/clean
 clean: CMakeFiles/ehtimam_app_autogen.dir/clean
 clean: CMakeFiles/run_tests_autogen_timestamp_deps.dir/clean
@@ -94,11 +99,11 @@ clean: CMakeFiles/run_tests_autogen.dir/clean
 # Target rules for target CMakeFiles/server_app.dir
 
 # All Build rule for target.
-CMakeFiles/server_app.dir/all: CMakeFiles/server_app_autogen.dir/all
 CMakeFiles/server_app.dir/all: CMakeFiles/server_app_autogen_timestamp_deps.dir/all
+CMakeFiles/server_app.dir/all: CMakeFiles/server_app_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_app.dir/build.make CMakeFiles/server_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_app.dir/build.make CMakeFiles/server_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=16,17,18,19 "Built target server_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=23,24,25,26 "Built target server_app"
 .PHONY : CMakeFiles/server_app.dir/all
 
 # Build rule for subdir invocation for target.
@@ -115,7 +120,7 @@ server_app: CMakeFiles/server_app.dir/rule
 # codegen rule for target.
 CMakeFiles/server_app.dir/codegen: CMakeFiles/server_app_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_app.dir/build.make CMakeFiles/server_app.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=16,17,18,19 "Finished codegen for target server_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=23,24,25,26 "Finished codegen for target server_app"
 .PHONY : CMakeFiles/server_app.dir/codegen
 
 # clean rule for target.
@@ -124,19 +129,53 @@ CMakeFiles/server_app.dir/clean:
 .PHONY : CMakeFiles/server_app.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/logic_lib.dir
+
+# All Build rule for target.
+CMakeFiles/logic_lib.dir/all: CMakeFiles/logic_lib_autogen_timestamp_deps.dir/all
+CMakeFiles/logic_lib.dir/all: CMakeFiles/logic_lib_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib.dir/build.make CMakeFiles/logic_lib.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib.dir/build.make CMakeFiles/logic_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=12,13,14,15,16 "Built target logic_lib"
+.PHONY : CMakeFiles/logic_lib.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/logic_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/logic_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 0
+.PHONY : CMakeFiles/logic_lib.dir/rule
+
+# Convenience name for target.
+logic_lib: CMakeFiles/logic_lib.dir/rule
+.PHONY : logic_lib
+
+# codegen rule for target.
+CMakeFiles/logic_lib.dir/codegen: CMakeFiles/logic_lib_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib.dir/build.make CMakeFiles/logic_lib.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=12,13,14,15,16 "Finished codegen for target logic_lib"
+.PHONY : CMakeFiles/logic_lib.dir/codegen
+
+# clean rule for target.
+CMakeFiles/logic_lib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib.dir/build.make CMakeFiles/logic_lib.dir/clean
+.PHONY : CMakeFiles/logic_lib.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/ehtimam_app.dir
 
 # All Build rule for target.
+CMakeFiles/ehtimam_app.dir/all: CMakeFiles/logic_lib.dir/all
 CMakeFiles/ehtimam_app.dir/all: CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir/all
 CMakeFiles/ehtimam_app.dir/all: CMakeFiles/ehtimam_app_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ehtimam_app.dir/build.make CMakeFiles/ehtimam_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ehtimam_app.dir/build.make CMakeFiles/ehtimam_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target ehtimam_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target ehtimam_app"
 .PHONY : CMakeFiles/ehtimam_app.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ehtimam_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ehtimam_app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 0
 .PHONY : CMakeFiles/ehtimam_app.dir/rule
@@ -148,7 +187,7 @@ ehtimam_app: CMakeFiles/ehtimam_app.dir/rule
 # codegen rule for target.
 CMakeFiles/ehtimam_app.dir/codegen: CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ehtimam_app.dir/build.make CMakeFiles/ehtimam_app.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Finished codegen for target ehtimam_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Finished codegen for target ehtimam_app"
 .PHONY : CMakeFiles/ehtimam_app.dir/codegen
 
 # clean rule for target.
@@ -160,16 +199,17 @@ CMakeFiles/ehtimam_app.dir/clean:
 # Target rules for target CMakeFiles/run_tests.dir
 
 # All Build rule for target.
+CMakeFiles/run_tests.dir/all: CMakeFiles/logic_lib.dir/all
 CMakeFiles/run_tests.dir/all: CMakeFiles/run_tests_autogen_timestamp_deps.dir/all
 CMakeFiles/run_tests.dir/all: CMakeFiles/run_tests_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=11,12,13,14 "Built target run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=18,19,20,21 "Built target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests.dir/rule
@@ -181,7 +221,7 @@ run_tests: CMakeFiles/run_tests.dir/rule
 # codegen rule for target.
 CMakeFiles/run_tests.dir/codegen: CMakeFiles/run_tests_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=11,12,13,14 "Finished codegen for target run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=18,19,20,21 "Finished codegen for target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/codegen
 
 # clean rule for target.
@@ -228,7 +268,7 @@ CMakeFiles/server_app_autogen_timestamp_deps.dir/clean:
 CMakeFiles/server_app_autogen.dir/all: CMakeFiles/server_app_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_app_autogen.dir/build.make CMakeFiles/server_app_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_app_autogen.dir/build.make CMakeFiles/server_app_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=20 "Built target server_app_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=27 "Built target server_app_autogen"
 .PHONY : CMakeFiles/server_app_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -245,7 +285,7 @@ server_app_autogen: CMakeFiles/server_app_autogen.dir/rule
 # codegen rule for target.
 CMakeFiles/server_app_autogen.dir/codegen: CMakeFiles/server_app_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_app_autogen.dir/build.make CMakeFiles/server_app_autogen.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=20 "Finished codegen for target server_app_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=27 "Finished codegen for target server_app_autogen"
 .PHONY : CMakeFiles/server_app_autogen.dir/codegen
 
 # clean rule for target.
@@ -254,10 +294,74 @@ CMakeFiles/server_app_autogen.dir/clean:
 .PHONY : CMakeFiles/server_app_autogen.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/logic_lib_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+CMakeFiles/logic_lib_autogen_timestamp_deps.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib_autogen_timestamp_deps.dir/build.make CMakeFiles/logic_lib_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib_autogen_timestamp_deps.dir/build.make CMakeFiles/logic_lib_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num= "Built target logic_lib_autogen_timestamp_deps"
+.PHONY : CMakeFiles/logic_lib_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/logic_lib_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/logic_lib_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 0
+.PHONY : CMakeFiles/logic_lib_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+logic_lib_autogen_timestamp_deps: CMakeFiles/logic_lib_autogen_timestamp_deps.dir/rule
+.PHONY : logic_lib_autogen_timestamp_deps
+
+# codegen rule for target.
+CMakeFiles/logic_lib_autogen_timestamp_deps.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib_autogen_timestamp_deps.dir/build.make CMakeFiles/logic_lib_autogen_timestamp_deps.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num= "Finished codegen for target logic_lib_autogen_timestamp_deps"
+.PHONY : CMakeFiles/logic_lib_autogen_timestamp_deps.dir/codegen
+
+# clean rule for target.
+CMakeFiles/logic_lib_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib_autogen_timestamp_deps.dir/build.make CMakeFiles/logic_lib_autogen_timestamp_deps.dir/clean
+.PHONY : CMakeFiles/logic_lib_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/logic_lib_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/logic_lib_autogen.dir/all: CMakeFiles/logic_lib_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib_autogen.dir/build.make CMakeFiles/logic_lib_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib_autogen.dir/build.make CMakeFiles/logic_lib_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=17 "Built target logic_lib_autogen"
+.PHONY : CMakeFiles/logic_lib_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/logic_lib_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/logic_lib_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 0
+.PHONY : CMakeFiles/logic_lib_autogen.dir/rule
+
+# Convenience name for target.
+logic_lib_autogen: CMakeFiles/logic_lib_autogen.dir/rule
+.PHONY : logic_lib_autogen
+
+# codegen rule for target.
+CMakeFiles/logic_lib_autogen.dir/codegen: CMakeFiles/logic_lib_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib_autogen.dir/build.make CMakeFiles/logic_lib_autogen.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=17 "Finished codegen for target logic_lib_autogen"
+.PHONY : CMakeFiles/logic_lib_autogen.dir/codegen
+
+# clean rule for target.
+CMakeFiles/logic_lib_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib_autogen.dir/build.make CMakeFiles/logic_lib_autogen.dir/clean
+.PHONY : CMakeFiles/logic_lib_autogen.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir
 
 # All Build rule for target.
-CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir/all:
+CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir/all: CMakeFiles/logic_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir/build.make CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir/build.make CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num= "Built target ehtimam_app_autogen_timestamp_deps"
@@ -265,7 +369,7 @@ CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 0
 .PHONY : CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir/rule
@@ -292,12 +396,12 @@ CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir/clean:
 CMakeFiles/ehtimam_app_autogen.dir/all: CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ehtimam_app_autogen.dir/build.make CMakeFiles/ehtimam_app_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ehtimam_app_autogen.dir/build.make CMakeFiles/ehtimam_app_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=10 "Built target ehtimam_app_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=11 "Built target ehtimam_app_autogen"
 .PHONY : CMakeFiles/ehtimam_app_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ehtimam_app_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ehtimam_app_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 0
 .PHONY : CMakeFiles/ehtimam_app_autogen.dir/rule
@@ -309,7 +413,7 @@ ehtimam_app_autogen: CMakeFiles/ehtimam_app_autogen.dir/rule
 # codegen rule for target.
 CMakeFiles/ehtimam_app_autogen.dir/codegen: CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ehtimam_app_autogen.dir/build.make CMakeFiles/ehtimam_app_autogen.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=10 "Finished codegen for target ehtimam_app_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=11 "Finished codegen for target ehtimam_app_autogen"
 .PHONY : CMakeFiles/ehtimam_app_autogen.dir/codegen
 
 # clean rule for target.
@@ -321,7 +425,7 @@ CMakeFiles/ehtimam_app_autogen.dir/clean:
 # Target rules for target CMakeFiles/run_tests_autogen_timestamp_deps.dir
 
 # All Build rule for target.
-CMakeFiles/run_tests_autogen_timestamp_deps.dir/all:
+CMakeFiles/run_tests_autogen_timestamp_deps.dir/all: CMakeFiles/logic_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests_autogen_timestamp_deps.dir/build.make CMakeFiles/run_tests_autogen_timestamp_deps.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests_autogen_timestamp_deps.dir/build.make CMakeFiles/run_tests_autogen_timestamp_deps.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num= "Built target run_tests_autogen_timestamp_deps"
@@ -329,7 +433,7 @@ CMakeFiles/run_tests_autogen_timestamp_deps.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests_autogen_timestamp_deps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run_tests_autogen_timestamp_deps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests_autogen_timestamp_deps.dir/rule
@@ -356,12 +460,12 @@ CMakeFiles/run_tests_autogen_timestamp_deps.dir/clean:
 CMakeFiles/run_tests_autogen.dir/all: CMakeFiles/run_tests_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests_autogen.dir/build.make CMakeFiles/run_tests_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests_autogen.dir/build.make CMakeFiles/run_tests_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=15 "Built target run_tests_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=22 "Built target run_tests_autogen"
 .PHONY : CMakeFiles/run_tests_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run_tests_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests_autogen.dir/rule
@@ -373,7 +477,7 @@ run_tests_autogen: CMakeFiles/run_tests_autogen.dir/rule
 # codegen rule for target.
 CMakeFiles/run_tests_autogen.dir/codegen: CMakeFiles/run_tests_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests_autogen.dir/build.make CMakeFiles/run_tests_autogen.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=15 "Finished codegen for target run_tests_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=22 "Finished codegen for target run_tests_autogen"
 .PHONY : CMakeFiles/run_tests_autogen.dir/codegen
 
 # clean rule for target.

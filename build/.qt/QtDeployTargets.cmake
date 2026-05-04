@@ -1,5 +1,7 @@
 set(__QT_DEPLOY_TARGET_server_app_FILE /Users/rolaelreedy/Ehtimam-Emergency-Network/build/server_app)
 set(__QT_DEPLOY_TARGET_server_app_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_logic_lib_FILE /Users/rolaelreedy/Ehtimam-Emergency-Network/build/liblogic_lib.a)
+set(__QT_DEPLOY_TARGET_logic_lib_TYPE STATIC_LIBRARY)
 set(__QT_DEPLOY_TARGET_ehtimam_app_FILE /Users/rolaelreedy/Ehtimam-Emergency-Network/build/ehtimam_app)
 set(__QT_DEPLOY_TARGET_ehtimam_app_TYPE EXECUTABLE)
 set(__QT_DEPLOY_TARGET_run_tests_FILE /Users/rolaelreedy/Ehtimam-Emergency-Network/build/run_tests)

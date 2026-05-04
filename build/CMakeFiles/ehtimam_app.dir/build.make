@@ -163,10 +163,24 @@ CMakeFiles/ehtimam_app.dir/src/gui/CircleWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ehtimam_app.dir/src/gui/CircleWindow.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/CircleWindow.cpp -o CMakeFiles/ehtimam_app.dir/src/gui/CircleWindow.cpp.s
 
+CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.o: CMakeFiles/ehtimam_app.dir/flags.make
+CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.o: /Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/ResourcesWindow.cpp
+CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.o: CMakeFiles/ehtimam_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.o -MF CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.o.d -o CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.o -c /Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/ResourcesWindow.cpp
+
+CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/ResourcesWindow.cpp > CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.i
+
+CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/ResourcesWindow.cpp -o CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.s
+
 CMakeFiles/ehtimam_app.dir/src/network/NetworkClient.cpp.o: CMakeFiles/ehtimam_app.dir/flags.make
 CMakeFiles/ehtimam_app.dir/src/network/NetworkClient.cpp.o: /Users/rolaelreedy/Ehtimam-Emergency-Network/src/network/NetworkClient.cpp
 CMakeFiles/ehtimam_app.dir/src/network/NetworkClient.cpp.o: CMakeFiles/ehtimam_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ehtimam_app.dir/src/network/NetworkClient.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ehtimam_app.dir/src/network/NetworkClient.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ehtimam_app.dir/src/network/NetworkClient.cpp.o -MF CMakeFiles/ehtimam_app.dir/src/network/NetworkClient.cpp.o.d -o CMakeFiles/ehtimam_app.dir/src/network/NetworkClient.cpp.o -c /Users/rolaelreedy/Ehtimam-Emergency-Network/src/network/NetworkClient.cpp
 
 CMakeFiles/ehtimam_app.dir/src/network/NetworkClient.cpp.i: cmake_force
@@ -185,6 +199,7 @@ ehtimam_app_OBJECTS = \
 "CMakeFiles/ehtimam_app.dir/src/gui/LoginWindow.cpp.o" \
 "CMakeFiles/ehtimam_app.dir/src/gui/MainWindow.cpp.o" \
 "CMakeFiles/ehtimam_app.dir/src/gui/CircleWindow.cpp.o" \
+"CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.o" \
 "CMakeFiles/ehtimam_app.dir/src/network/NetworkClient.cpp.o"
 
 # External object files for target ehtimam_app
@@ -196,13 +211,15 @@ ehtimam_app: CMakeFiles/ehtimam_app.dir/src/gui/AppController.cpp.o
 ehtimam_app: CMakeFiles/ehtimam_app.dir/src/gui/LoginWindow.cpp.o
 ehtimam_app: CMakeFiles/ehtimam_app.dir/src/gui/MainWindow.cpp.o
 ehtimam_app: CMakeFiles/ehtimam_app.dir/src/gui/CircleWindow.cpp.o
+ehtimam_app: CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.o
 ehtimam_app: CMakeFiles/ehtimam_app.dir/src/network/NetworkClient.cpp.o
 ehtimam_app: CMakeFiles/ehtimam_app.dir/build.make
 ehtimam_app: /opt/homebrew/opt/qt/lib/QtWidgets.framework/Versions/A/QtWidgets
+ehtimam_app: liblogic_lib.a
 ehtimam_app: /opt/homebrew/opt/qt/lib/QtGui.framework/Versions/A/QtGui
 ehtimam_app: /opt/homebrew/opt/qt/lib/QtCore.framework/Versions/A/QtCore
 ehtimam_app: CMakeFiles/ehtimam_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ehtimam_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ehtimam_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ehtimam_app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

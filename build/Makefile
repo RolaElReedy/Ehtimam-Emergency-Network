@@ -140,6 +140,19 @@ server_app/fast:
 .PHONY : server_app/fast
 
 #=============================================================================
+# Target rules for targets named logic_lib
+
+# Build rule for target.
+logic_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 logic_lib
+.PHONY : logic_lib
+
+# fast build rule for target.
+logic_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib.dir/build.make CMakeFiles/logic_lib.dir/build
+.PHONY : logic_lib/fast
+
+#=============================================================================
 # Target rules for targets named ehtimam_app
 
 # Build rule for target.
@@ -190,6 +203,32 @@ server_app_autogen: cmake_check_build_system
 server_app_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_app_autogen.dir/build.make CMakeFiles/server_app_autogen.dir/build
 .PHONY : server_app_autogen/fast
+
+#=============================================================================
+# Target rules for targets named logic_lib_autogen_timestamp_deps
+
+# Build rule for target.
+logic_lib_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 logic_lib_autogen_timestamp_deps
+.PHONY : logic_lib_autogen_timestamp_deps
+
+# fast build rule for target.
+logic_lib_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib_autogen_timestamp_deps.dir/build.make CMakeFiles/logic_lib_autogen_timestamp_deps.dir/build
+.PHONY : logic_lib_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named logic_lib_autogen
+
+# Build rule for target.
+logic_lib_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 logic_lib_autogen
+.PHONY : logic_lib_autogen
+
+# fast build rule for target.
+logic_lib_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib_autogen.dir/build.make CMakeFiles/logic_lib_autogen.dir/build
+.PHONY : logic_lib_autogen/fast
 
 #=============================================================================
 # Target rules for targets named ehtimam_app_autogen_timestamp_deps
@@ -266,6 +305,30 @@ ehtimam_app_autogen/mocs_compilation.s: ehtimam_app_autogen/mocs_compilation.cpp
 ehtimam_app_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ehtimam_app.dir/build.make CMakeFiles/ehtimam_app.dir/ehtimam_app_autogen/mocs_compilation.cpp.s
 .PHONY : ehtimam_app_autogen/mocs_compilation.cpp.s
+
+logic_lib_autogen/mocs_compilation.o: logic_lib_autogen/mocs_compilation.cpp.o
+.PHONY : logic_lib_autogen/mocs_compilation.o
+
+# target to build an object file
+logic_lib_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib.dir/build.make CMakeFiles/logic_lib.dir/logic_lib_autogen/mocs_compilation.cpp.o
+.PHONY : logic_lib_autogen/mocs_compilation.cpp.o
+
+logic_lib_autogen/mocs_compilation.i: logic_lib_autogen/mocs_compilation.cpp.i
+.PHONY : logic_lib_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+logic_lib_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib.dir/build.make CMakeFiles/logic_lib.dir/logic_lib_autogen/mocs_compilation.cpp.i
+.PHONY : logic_lib_autogen/mocs_compilation.cpp.i
+
+logic_lib_autogen/mocs_compilation.s: logic_lib_autogen/mocs_compilation.cpp.s
+.PHONY : logic_lib_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+logic_lib_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib.dir/build.make CMakeFiles/logic_lib.dir/logic_lib_autogen/mocs_compilation.cpp.s
+.PHONY : logic_lib_autogen/mocs_compilation.cpp.s
 
 run_tests_autogen/mocs_compilation.o: run_tests_autogen/mocs_compilation.cpp.o
 .PHONY : run_tests_autogen/mocs_compilation.o
@@ -411,6 +474,78 @@ src/gui/MainWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ehtimam_app.dir/build.make CMakeFiles/ehtimam_app.dir/src/gui/MainWindow.cpp.s
 .PHONY : src/gui/MainWindow.cpp.s
 
+src/gui/ResourcesWindow.o: src/gui/ResourcesWindow.cpp.o
+.PHONY : src/gui/ResourcesWindow.o
+
+# target to build an object file
+src/gui/ResourcesWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ehtimam_app.dir/build.make CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.o
+.PHONY : src/gui/ResourcesWindow.cpp.o
+
+src/gui/ResourcesWindow.i: src/gui/ResourcesWindow.cpp.i
+.PHONY : src/gui/ResourcesWindow.i
+
+# target to preprocess a source file
+src/gui/ResourcesWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ehtimam_app.dir/build.make CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.i
+.PHONY : src/gui/ResourcesWindow.cpp.i
+
+src/gui/ResourcesWindow.s: src/gui/ResourcesWindow.cpp.s
+.PHONY : src/gui/ResourcesWindow.s
+
+# target to generate assembly for a file
+src/gui/ResourcesWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ehtimam_app.dir/build.make CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.s
+.PHONY : src/gui/ResourcesWindow.cpp.s
+
+src/logic/AlertManager.o: src/logic/AlertManager.cpp.o
+.PHONY : src/logic/AlertManager.o
+
+# target to build an object file
+src/logic/AlertManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib.dir/build.make CMakeFiles/logic_lib.dir/src/logic/AlertManager.cpp.o
+.PHONY : src/logic/AlertManager.cpp.o
+
+src/logic/AlertManager.i: src/logic/AlertManager.cpp.i
+.PHONY : src/logic/AlertManager.i
+
+# target to preprocess a source file
+src/logic/AlertManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib.dir/build.make CMakeFiles/logic_lib.dir/src/logic/AlertManager.cpp.i
+.PHONY : src/logic/AlertManager.cpp.i
+
+src/logic/AlertManager.s: src/logic/AlertManager.cpp.s
+.PHONY : src/logic/AlertManager.s
+
+# target to generate assembly for a file
+src/logic/AlertManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib.dir/build.make CMakeFiles/logic_lib.dir/src/logic/AlertManager.cpp.s
+.PHONY : src/logic/AlertManager.cpp.s
+
+src/logic/CircleManager.o: src/logic/CircleManager.cpp.o
+.PHONY : src/logic/CircleManager.o
+
+# target to build an object file
+src/logic/CircleManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib.dir/build.make CMakeFiles/logic_lib.dir/src/logic/CircleManager.cpp.o
+.PHONY : src/logic/CircleManager.cpp.o
+
+src/logic/CircleManager.i: src/logic/CircleManager.cpp.i
+.PHONY : src/logic/CircleManager.i
+
+# target to preprocess a source file
+src/logic/CircleManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib.dir/build.make CMakeFiles/logic_lib.dir/src/logic/CircleManager.cpp.i
+.PHONY : src/logic/CircleManager.cpp.i
+
+src/logic/CircleManager.s: src/logic/CircleManager.cpp.s
+.PHONY : src/logic/CircleManager.s
+
+# target to generate assembly for a file
+src/logic/CircleManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic_lib.dir/build.make CMakeFiles/logic_lib.dir/src/logic/CircleManager.cpp.s
+.PHONY : src/logic/CircleManager.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -518,16 +653,22 @@ help:
 	@echo "... test"
 	@echo "... ehtimam_app_autogen"
 	@echo "... ehtimam_app_autogen_timestamp_deps"
+	@echo "... logic_lib_autogen"
+	@echo "... logic_lib_autogen_timestamp_deps"
 	@echo "... run_tests_autogen"
 	@echo "... run_tests_autogen_timestamp_deps"
 	@echo "... server_app_autogen"
 	@echo "... server_app_autogen_timestamp_deps"
 	@echo "... ehtimam_app"
+	@echo "... logic_lib"
 	@echo "... run_tests"
 	@echo "... server_app"
 	@echo "... ehtimam_app_autogen/mocs_compilation.o"
 	@echo "... ehtimam_app_autogen/mocs_compilation.i"
 	@echo "... ehtimam_app_autogen/mocs_compilation.s"
+	@echo "... logic_lib_autogen/mocs_compilation.o"
+	@echo "... logic_lib_autogen/mocs_compilation.i"
+	@echo "... logic_lib_autogen/mocs_compilation.s"
 	@echo "... run_tests_autogen/mocs_compilation.o"
 	@echo "... run_tests_autogen/mocs_compilation.i"
 	@echo "... run_tests_autogen/mocs_compilation.s"
@@ -546,6 +687,15 @@ help:
 	@echo "... src/gui/MainWindow.o"
 	@echo "... src/gui/MainWindow.i"
 	@echo "... src/gui/MainWindow.s"
+	@echo "... src/gui/ResourcesWindow.o"
+	@echo "... src/gui/ResourcesWindow.i"
+	@echo "... src/gui/ResourcesWindow.s"
+	@echo "... src/logic/AlertManager.o"
+	@echo "... src/logic/AlertManager.i"
+	@echo "... src/logic/AlertManager.s"
+	@echo "... src/logic/CircleManager.o"
+	@echo "... src/logic/CircleManager.i"
+	@echo "... src/logic/CircleManager.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

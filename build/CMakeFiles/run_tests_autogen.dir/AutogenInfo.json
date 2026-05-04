@@ -590,6 +590,7 @@
 	"MOC_INCLUDES" : 
 	[
 		"/opt/homebrew/include",
+		"/Users/rolaelreedy/Ehtimam-Emergency-Network/src",
 		"/opt/anaconda3/include",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
 		"/Library/Developer/CommandLineTools/usr/lib/clang/17/include",
@@ -621,6 +622,7 @@
 	"MOC_SKIP" : 
 	[
 		"/Users/rolaelreedy/Ehtimam-Emergency-Network/build/ehtimam_app_autogen/mocs_compilation.cpp",
+		"/Users/rolaelreedy/Ehtimam-Emergency-Network/build/logic_lib_autogen/mocs_compilation.cpp",
 		"/Users/rolaelreedy/Ehtimam-Emergency-Network/build/server_app_autogen/mocs_compilation.cpp"
 	],
 	"MULTI_CONFIG" : false,
@@ -644,6 +646,7 @@
 	"UIC_SKIP" : 
 	[
 		"/Users/rolaelreedy/Ehtimam-Emergency-Network/build/ehtimam_app_autogen/mocs_compilation.cpp",
+		"/Users/rolaelreedy/Ehtimam-Emergency-Network/build/logic_lib_autogen/mocs_compilation.cpp",
 		"/Users/rolaelreedy/Ehtimam-Emergency-Network/build/server_app_autogen/mocs_compilation.cpp"
 	],
 	"UIC_UI_FILES" : [],

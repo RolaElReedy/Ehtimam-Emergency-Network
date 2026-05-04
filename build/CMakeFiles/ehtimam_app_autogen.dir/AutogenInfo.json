@@ -602,6 +602,12 @@
 			null
 		],
 		[
+			"/Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/ResourcesWindow.h",
+			"MU",
+			"MXUWEOXILK/moc_ResourcesWindow.cpp",
+			null
+		],
+		[
 			"/Users/rolaelreedy/Ehtimam-Emergency-Network/src/network/NetworkClient.h",
 			"MU",
 			"UFQQIFJZKK/moc_NetworkClient.cpp",
@@ -661,6 +667,7 @@
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
+		"/Users/rolaelreedy/Ehtimam-Emergency-Network/build/logic_lib_autogen/mocs_compilation.cpp",
 		"/Users/rolaelreedy/Ehtimam-Emergency-Network/build/server_app_autogen/mocs_compilation.cpp"
 	],
 	"MULTI_CONFIG" : false,
@@ -694,6 +701,11 @@
 			null
 		],
 		[
+			"/Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/ResourcesWindow.cpp",
+			"MU",
+			null
+		],
+		[
 			"/Users/rolaelreedy/Ehtimam-Emergency-Network/src/main.cpp",
 			"MU",
 			null
@@ -708,6 +720,7 @@
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
+		"/Users/rolaelreedy/Ehtimam-Emergency-Network/build/logic_lib_autogen/mocs_compilation.cpp",
 		"/Users/rolaelreedy/Ehtimam-Emergency-Network/build/server_app_autogen/mocs_compilation.cpp"
 	],
 	"UIC_UI_FILES" : [],

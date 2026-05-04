@@ -828,6 +828,8 @@
  /Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/LoginWindow.h
  /Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/MainWindow.cpp
  /Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/MainWindow.h
+ /Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/ResourcesWindow.cpp
+ /Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/ResourcesWindow.h
  /Users/rolaelreedy/Ehtimam-Emergency-Network/src/main.cpp
  /Users/rolaelreedy/Ehtimam-Emergency-Network/src/network/NetworkClient.cpp
  /Users/rolaelreedy/Ehtimam-Emergency-Network/src/network/NetworkClient.h

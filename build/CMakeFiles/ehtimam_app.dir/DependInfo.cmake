@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/CircleWindow.cpp" "CMakeFiles/ehtimam_app.dir/src/gui/CircleWindow.cpp.o" "gcc" "CMakeFiles/ehtimam_app.dir/src/gui/CircleWindow.cpp.o.d"
   "/Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/LoginWindow.cpp" "CMakeFiles/ehtimam_app.dir/src/gui/LoginWindow.cpp.o" "gcc" "CMakeFiles/ehtimam_app.dir/src/gui/LoginWindow.cpp.o.d"
   "/Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/MainWindow.cpp" "CMakeFiles/ehtimam_app.dir/src/gui/MainWindow.cpp.o" "gcc" "CMakeFiles/ehtimam_app.dir/src/gui/MainWindow.cpp.o.d"
+  "/Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/ResourcesWindow.cpp" "CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.o" "gcc" "CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.o.d"
   "/Users/rolaelreedy/Ehtimam-Emergency-Network/src/main.cpp" "CMakeFiles/ehtimam_app.dir/src/main.cpp.o" "gcc" "CMakeFiles/ehtimam_app.dir/src/main.cpp.o.d"
   "/Users/rolaelreedy/Ehtimam-Emergency-Network/src/network/NetworkClient.cpp" "CMakeFiles/ehtimam_app.dir/src/network/NetworkClient.cpp.o" "gcc" "CMakeFiles/ehtimam_app.dir/src/network/NetworkClient.cpp.o.d"
   )

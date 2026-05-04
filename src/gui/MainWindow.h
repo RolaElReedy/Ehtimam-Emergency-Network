@@ -14,9 +14,12 @@ signals:
     void alertTriggered();
     void messageSent(const QString& msg);
     void openCircleManager();
+    void openResources();
+    void markSafe();
 private slots:
     void onAlertClicked();
     void onSendClicked();
+    void onSafeClicked();
 private:
     QString username_;
     QTextEdit* chatLog_;
@@ -24,5 +27,7 @@ private:
     QPushButton* sendBtn_;
     QPushButton* alertBtn_;
     QPushButton* circleBtn_;
+    QPushButton* resourcesBtn_;
+    QPushButton* safeBtn_;
     QLabel* statusLabel_;
 };

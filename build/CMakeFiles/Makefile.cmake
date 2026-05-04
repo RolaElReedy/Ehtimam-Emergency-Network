@@ -435,6 +435,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/4.3.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.3.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/server_app_autogen.dir/AutogenInfo.json"
+  "CMakeFiles/logic_lib_autogen.dir/AutogenInfo.json"
   "CMakeFiles/ehtimam_app_autogen.dir/AutogenInfo.json"
   "CMakeFiles/run_tests_autogen.dir/AutogenInfo.json"
   ".qt/QtDeploySupport.cmake"
@@ -445,10 +446,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/server_app.dir/DependInfo.cmake"
+  "CMakeFiles/logic_lib.dir/DependInfo.cmake"
   "CMakeFiles/ehtimam_app.dir/DependInfo.cmake"
   "CMakeFiles/run_tests.dir/DependInfo.cmake"
   "CMakeFiles/server_app_autogen_timestamp_deps.dir/DependInfo.cmake"
   "CMakeFiles/server_app_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/logic_lib_autogen_timestamp_deps.dir/DependInfo.cmake"
+  "CMakeFiles/logic_lib_autogen.dir/DependInfo.cmake"
   "CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir/DependInfo.cmake"
   "CMakeFiles/ehtimam_app_autogen.dir/DependInfo.cmake"
   "CMakeFiles/run_tests_autogen_timestamp_deps.dir/DependInfo.cmake"

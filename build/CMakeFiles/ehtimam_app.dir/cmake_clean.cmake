@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ehtimam_app.dir/src/gui/LoginWindow.cpp.o.d"
   "CMakeFiles/ehtimam_app.dir/src/gui/MainWindow.cpp.o"
   "CMakeFiles/ehtimam_app.dir/src/gui/MainWindow.cpp.o.d"
+  "CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.o"
+  "CMakeFiles/ehtimam_app.dir/src/gui/ResourcesWindow.cpp.o.d"
   "CMakeFiles/ehtimam_app.dir/src/main.cpp.o"
   "CMakeFiles/ehtimam_app.dir/src/main.cpp.o.d"
   "CMakeFiles/ehtimam_app.dir/src/network/NetworkClient.cpp.o"

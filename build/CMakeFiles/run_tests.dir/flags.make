@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/rolaelreedy/Ehtimam-Emergency-Network/build/run_tests_autogen/include -I/opt/homebrew/include -isystem /opt/anaconda3/include
+CXX_INCLUDES = -I/Users/rolaelreedy/Ehtimam-Emergency-Network/build/run_tests_autogen/include -I/opt/homebrew/include -I/Users/rolaelreedy/Ehtimam-Emergency-Network/src -isystem /opt/anaconda3/include
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
 

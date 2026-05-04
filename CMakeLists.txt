@@ -16,6 +16,10 @@ add_executable(server_app src/server/server.cpp)
 target_include_directories(server_app PRIVATE ${Boost_INCLUDE_DIRS} ${SQLITE3_INCLUDE})
 target_link_libraries(server_app nlohmann_json::nlohmann_json ${SQLITE3_LIB} pthread)
 
+# Logic library
+add_library(logic_lib src/logic/AlertManager.cpp src/logic/CircleManager.cpp)
+target_include_directories(logic_lib PRIVATE ${Boost_INCLUDE_DIRS})
+
 # GUI Client
 add_executable(ehtimam_app
     src/main.cpp
@@ -23,21 +27,26 @@ add_executable(ehtimam_app
     src/gui/LoginWindow.cpp
     src/gui/MainWindow.cpp
     src/gui/CircleWindow.cpp
+    src/gui/ResourcesWindow.cpp
     src/network/NetworkClient.cpp
 )
 target_include_directories(ehtimam_app PRIVATE ${Boost_INCLUDE_DIRS} src)
-target_link_libraries(ehtimam_app Qt6::Core Qt6::Widgets nlohmann_json::nlohmann_json pthread)
+target_link_libraries(ehtimam_app Qt6::Core Qt6::Widgets nlohmann_json::nlohmann_json logic_lib pthread)
 
 # Tests
 find_package(GTest QUIET)
 if(NOT GTest_FOUND)
     find_package(GTest QUIET PATHS /opt/homebrew/lib/cmake/GTest /opt/homebrew/Cellar)
 endif()
-if(GTest_FOUND OR TARGET GTest::gtest)
-    enable_testing()
-    add_executable(run_tests tests/test_main.cpp)
-    target_include_directories(run_tests PRIVATE /opt/homebrew/include)
-    target_link_libraries(run_tests /opt/homebrew/lib/libgtest.a /opt/homebrew/lib/libgmock.a /opt/homebrew/lib/libgtest_main.a nlohmann_json::nlohmann_json)
-    set_target_properties(run_tests PROPERTIES BUILD_RPATH "/opt/homebrew/lib" INSTALL_RPATH "/opt/homebrew/lib")
-    add_test(NAME EhtimamTests COMMAND run_tests)
-endif()
+enable_testing()
+add_executable(run_tests tests/test_main.cpp)
+target_include_directories(run_tests PRIVATE /opt/homebrew/include src)
+target_link_libraries(run_tests
+    logic_lib
+    /opt/homebrew/lib/libgtest.a
+    /opt/homebrew/lib/libgmock.a
+    /opt/homebrew/lib/libgtest_main.a
+    nlohmann_json::nlohmann_json
+)
+set_target_properties(run_tests PROPERTIES BUILD_RPATH "/opt/homebrew/lib" INSTALL_RPATH "/opt/homebrew/lib")
+add_test(NAME EhtimamTests COMMAND run_tests)

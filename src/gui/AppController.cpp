@@ -26,6 +26,8 @@ void AppController::onLoginRequested(const QString& username, const QString& hos
     connect(mainWindow_.get(), &MainWindow::alertTriggered, this, &AppController::onAlertTriggered);
     connect(mainWindow_.get(), &MainWindow::messageSent, this, &AppController::onMessageSent);
     connect(mainWindow_.get(), &MainWindow::openCircleManager, this, &AppController::onOpenCircleManager);
+    connect(mainWindow_.get(), &MainWindow::openResources, this, &AppController::onOpenResources);
+    connect(mainWindow_.get(), &MainWindow::markSafe, this, &AppController::onMarkSafe);
     loginWindow_->hide();
     mainWindow_->show();
     json j;
@@ -48,6 +50,10 @@ void AppController::onMessageSent(const QString& msg) {
         j["type"] = "suggest";
         j["user"] = username_.toStdString();
         j["message"] = msg.mid(8).toStdString();
+    } else if (msg.startsWith("ack")) {
+        j["type"] = "ack";
+        j["user"] = username_.toStdString();
+        j["message"] = "I received your alert. On my way!";
     } else {
         j["type"] = "status";
         j["user"] = username_.toStdString();
@@ -60,6 +66,19 @@ void AppController::onOpenCircleManager() {
     if (!circleWindow_) circleWindow_ = std::make_unique<CircleWindow>(mainWindow_.get());
     circleWindow_->show();
 }
+void AppController::onOpenResources() {
+    if (!resourcesWindow_) resourcesWindow_ = std::make_unique<ResourcesWindow>(mainWindow_.get());
+    resourcesWindow_->show();
+}
+void AppController::onMarkSafe() {
+    json j;
+    j["type"] = "safe";
+    j["user"] = username_.toStdString();
+    j["message"] = "I am safe now. Thank you everyone!";
+    client_->sendMessage(j.dump());
+    mainWindow_->appendMessage("You marked yourself as SAFE");
+    mainWindow_->setStatus("Safe - " + username_, true);
+}
 void AppController::onMessageReceived(const std::string& raw) {
     try {
         auto j = json::parse(raw);
@@ -68,9 +87,15 @@ void AppController::onMessageReceived(const std::string& raw) {
         std::string msg  = j.value("message", "");
         QString display;
         if (type == "alert")
-            display = "ALERT from " + QString::fromStdString(user) + ": " + QString::fromStdString(msg);
-        else if (type == "suggest" || raw.find("[AI Advice") != std::string::npos)
-            display = QString::fromStdString(raw);
+            display = "🆘 ALERT from " + QString::fromStdString(user) + ": " + QString::fromStdString(msg);
+        else if (type == "safe")
+            display = "✅ " + QString::fromStdString(user) + " is SAFE";
+        else if (type == "ack")
+            display = "👍 " + QString::fromStdString(user) + " acknowledged: " + QString::fromStdString(msg);
+        else if (type == "join")
+            display = "🟢 " + QString::fromStdString(user) + " joined";
+        else if (raw.find("[AI Advice") != std::string::npos)
+            display = "🤖 " + QString::fromStdString(raw);
         else
             display = QString::fromStdString(user) + ": " + QString::fromStdString(msg);
         if (mainWindow_) mainWindow_->appendMessage(display);

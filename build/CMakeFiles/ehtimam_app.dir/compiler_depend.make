@@ -827,6 +827,8 @@ ehtimam_app_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX26
   /Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/LoginWindow.h \
   /Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/MainWindow.cpp \
   /Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/MainWindow.h \
+  /Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/ResourcesWindow.cpp \
+  /Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/ResourcesWindow.h \
   /Users/rolaelreedy/Ehtimam-Emergency-Network/src/main.cpp \
   /Users/rolaelreedy/Ehtimam-Emergency-Network/src/network/NetworkClient.cpp \
   /Users/rolaelreedy/Ehtimam-Emergency-Network/src/network/NetworkClient.h \
@@ -2280,6 +2282,12 @@ ehtimam_app_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX26
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginAdditionalTargetInfo.cmake:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginTargetsPrecheck.cmake:
+
+/opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginTargets.cmake:
+
 /opt/homebrew/Cellar/boost/1.90.0_1/include/boost/system/detail/append_int.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX26.0.sdk/usr/include/c++/v1/initializer_list:
@@ -2651,8 +2659,6 @@ CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 /opt/homebrew/Cellar/qtbase/6.11.0/lib/QtCore.framework/Versions/A/Headers/qlocale.h:
 
 /opt/homebrew/Cellar/qtbase/6.11.0/lib/QtCore.framework/Versions/A/Headers/qline.h:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginTargetsPrecheck.cmake:
 
 /opt/homebrew/Cellar/qtbase/6.11.0/lib/QtCore.framework/Versions/A/Headers/qiterator.h:
 
@@ -3362,10 +3368,6 @@ CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 
 /opt/homebrew/Cellar/boost/1.90.0_1/include/boost/asio/detail/impl/resolver_thread_pool.ipp:
 
-/opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginTargets.cmake:
-
 /opt/homebrew/Cellar/boost/1.90.0_1/include/boost/asio/detail/impl/reactive_socket_service_base.ipp:
 
 /opt/homebrew/Cellar/boost/1.90.0_1/include/boost/asio/detail/impl/reactive_descriptor_service.ipp:
@@ -3503,6 +3505,8 @@ CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 /opt/homebrew/Cellar/boost/1.90.0_1/include/boost/asio/ip/address.hpp:
 
 /opt/homebrew/Cellar/boost/1.90.0_1/include/boost/asio/consign.hpp:
+
+/Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/ResourcesWindow.h:
 
 /opt/homebrew/Cellar/boost/1.90.0_1/include/boost/asio/connect.hpp:
 
@@ -4383,6 +4387,8 @@ CMakeFiles/4.3.2/CMakeSystem.cmake:
 /opt/homebrew/Cellar/qtbase/6.11.0/lib/QtCore.framework/Versions/A/Headers/qutf8stringview.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX26.0.sdk/usr/include/c++/v1/__type_traits/remove_reference.h:
+
+/Users/rolaelreedy/Ehtimam-Emergency-Network/src/gui/ResourcesWindow.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX26.0.sdk/usr/include/_locale.h:
 

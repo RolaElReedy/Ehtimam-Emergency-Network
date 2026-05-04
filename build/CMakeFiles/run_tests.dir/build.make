@@ -118,6 +118,7 @@ run_tests_EXTERNAL_OBJECTS =
 run_tests: CMakeFiles/run_tests.dir/run_tests_autogen/mocs_compilation.cpp.o
 run_tests: CMakeFiles/run_tests.dir/tests/test_main.cpp.o
 run_tests: CMakeFiles/run_tests.dir/build.make
+run_tests: liblogic_lib.a
 run_tests: /opt/homebrew/lib/libgtest.a
 run_tests: /opt/homebrew/lib/libgmock.a
 run_tests: /opt/homebrew/lib/libgtest_main.a
