@@ -1,0 +1,6 @@
+set(__QT_DEPLOY_TARGET_server_app_FILE /Users/rolaelreedy/Ehtimam-Emergency-Network/build/server_app)
+set(__QT_DEPLOY_TARGET_server_app_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_ehtimam_app_FILE /Users/rolaelreedy/Ehtimam-Emergency-Network/build/ehtimam_app)
+set(__QT_DEPLOY_TARGET_ehtimam_app_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_run_tests_FILE /Users/rolaelreedy/Ehtimam-Emergency-Network/build/run_tests)
+set(__QT_DEPLOY_TARGET_run_tests_TYPE EXECUTABLE)

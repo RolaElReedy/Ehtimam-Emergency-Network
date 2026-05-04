@@ -1,0 +1,12 @@
+/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles/server_app.dir
+/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles/ehtimam_app.dir
+/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles/run_tests.dir
+/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles/test.dir
+/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles/edit_cache.dir
+/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles/rebuild_cache.dir
+/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles/server_app_autogen_timestamp_deps.dir
+/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles/server_app_autogen.dir
+/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles/ehtimam_app_autogen_timestamp_deps.dir
+/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles/ehtimam_app_autogen.dir
+/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles/run_tests_autogen_timestamp_deps.dir
+/Users/rolaelreedy/Ehtimam-Emergency-Network/build/CMakeFiles/run_tests_autogen.dir

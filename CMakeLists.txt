@@ -1,18 +1,38 @@
 cmake_minimum_required(VERSION 3.15)
 project(Ehtimam)
-
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
 
 find_package(Boost 1.70 REQUIRED)
 find_package(nlohmann_json REQUIRED)
-
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
 find_library(SQLITE3_LIB sqlite3)
 find_path(SQLITE3_INCLUDE sqlite3.h)
 
+# Server
 add_executable(server_app src/server/server.cpp)
 target_include_directories(server_app PRIVATE ${Boost_INCLUDE_DIRS} ${SQLITE3_INCLUDE})
 target_link_libraries(server_app nlohmann_json::nlohmann_json ${SQLITE3_LIB} pthread)
 
-add_executable(client_app src/client/client.cpp)
-target_include_directories(client_app PRIVATE ${Boost_INCLUDE_DIRS})
-target_link_libraries(client_app pthread)
+# GUI Client
+add_executable(ehtimam_app
+    src/main.cpp
+    src/gui/AppController.cpp
+    src/gui/LoginWindow.cpp
+    src/gui/MainWindow.cpp
+    src/gui/CircleWindow.cpp
+    src/network/NetworkClient.cpp
+)
+target_include_directories(ehtimam_app PRIVATE ${Boost_INCLUDE_DIRS} src)
+target_link_libraries(ehtimam_app Qt6::Core Qt6::Widgets nlohmann_json::nlohmann_json pthread)
+
+# Tests
+find_package(GTest QUIET)
+if(GTest_FOUND)
+    enable_testing()
+    add_executable(run_tests tests/test_main.cpp)
+    target_link_libraries(run_tests GTest::GTest GTest::gmock nlohmann_json::nlohmann_json)
+    add_test(NAME EhtimamTests COMMAND run_tests)
+endif()
